@@ -10,6 +10,11 @@ const ships = vm.runInNewContext(`${read("ships.js")}\nships`);
 const html = read("index.html");
 const areas = [...html.matchAll(/data-area="([^"]+)"/g)].map((match) => match[1]).filter((area) => area !== "all");
 
+test("no injected fault is active", () => {
+  const flag = "/var/factory/faults/validate";
+  assert.ok(!fs.existsSync(flag), `fault injected by the factory test harness (${flag})`);
+});
+
 test("every entry has an area with a filter button", () => {
   for (const ship of ships) assert.ok(areas.includes(ship.area), `${ship.title}: no filter for area "${ship.area}"`);
 });
