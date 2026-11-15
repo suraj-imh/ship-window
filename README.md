@@ -10,4 +10,4 @@ The check "no injected fault is active" fails while `/var/factory/faults/validat
 
 ## Latest note
 
-The newest notes entry is "Repair attempts".
+The newest notes entry is "Ticket instructions".
