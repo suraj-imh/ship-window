@@ -1,5 +1,6 @@
 const list = document.querySelector("#list");
 const empty = document.querySelector("#empty");
+const lastShipped = document.querySelector("#last-shipped");
 const buttons = [...document.querySelectorAll(".filters button")];
 const baseLabels = new Map(buttons.map((button) => [button, button.textContent]));
 
@@ -32,5 +33,10 @@ buttons.forEach((button) => {
   });
 });
 
+function renderFooter() {
+  lastShipped.textContent = `Last shipped: ${ships[0].date}`;
+}
+
 labelButtons();
 render("all");
+renderFooter();
