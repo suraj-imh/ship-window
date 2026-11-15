@@ -1,5 +1,11 @@
 const ships = [
   {
+    area: "notes",
+    date: "2026-11-15",
+    title: "Release area",
+    detail: "Releases now have their own filter next to Page and Notes."
+  },
+  {
     area: "release",
     date: "2026-11-15",
     title: "Version 1.0",
