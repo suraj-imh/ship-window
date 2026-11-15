@@ -26,6 +26,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Skipped checks",
+    detail: "Checks run in code, so nobody can skip them."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Stop evidence",
     detail: "A stopped change keeps its notes and merges nothing."
   },
