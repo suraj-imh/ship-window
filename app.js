@@ -1,9 +1,20 @@
 const list = document.querySelector("#list");
 const empty = document.querySelector("#empty");
 const buttons = [...document.querySelectorAll(".filters button")];
+const baseLabels = new Map(buttons.map((button) => [button, button.textContent]));
+
+function shownShips(area) {
+  return ships.filter((ship) => area === "all" || ship.area === area);
+}
+
+function labelButtons() {
+  buttons.forEach((button) => {
+    button.textContent = `${baseLabels.get(button)} (${shownShips(button.dataset.area).length})`;
+  });
+}
 
 function render(area) {
-  const shown = ships.filter((ship) => area === "all" || ship.area === area);
+  const shown = shownShips(area);
   list.replaceChildren(...shown.map((ship) => {
     const item = document.createElement("li");
     item.innerHTML = `<time datetime="${ship.date}">${ship.date}</time><h2></h2><p></p>`;
@@ -21,4 +32,5 @@ buttons.forEach((button) => {
   });
 });
 
+labelButtons();
 render("all");
