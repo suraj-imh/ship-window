@@ -3,7 +3,7 @@ const ships = [
     area: "notes",
     date: "2026-11-15",
     title: "Short titles",
-    detail: "Titles stay under five words so the list scans quickly."
+    detail: "Titles stay under five words so the list scans quickly. <a href=\"https://github.com/suraj-imh/ship-window/pull/1\">PR 1</a>."
   },
   {
     area: "release",
