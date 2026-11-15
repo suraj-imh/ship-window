@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-16",
+    title: "Live input",
+    detail: "You can talk to a running card from its session."
+  },
+  {
+    area: "notes",
+    date: "2026-11-16",
     title: "Agent stages",
     detail: "AI agents plan, build and commit each change."
   },
