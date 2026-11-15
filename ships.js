@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Repair attempts",
+    detail: "A failed check goes back to Implement while attempts remain."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Stop evidence",
     detail: "A stopped change keeps its notes and merges nothing."
   },
