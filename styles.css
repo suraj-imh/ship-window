@@ -77,3 +77,13 @@ h2 { margin: 4px 0; font-size: 22px; }
 p { margin: 0; }
 
 #empty { color: var(--muted); }
+
+.back-to-top { margin: 28px 0 16px; }
+
+.back-to-top a { color: var(--muted); text-decoration: none; }
+
+.back-to-top a:hover, .back-to-top a:focus-visible { color: var(--ink); }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
