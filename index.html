@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ship window</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Public changelog</p>
+    <h1>Ship window</h1>
+    <p class="lede">A short record of what shipped. Filter by area, or read the latest first.</p>
+  </header>
+  <main>
+    <div class="filters" role="group" aria-label="Filter by area">
+      <button type="button" class="on" data-area="all">All</button>
+      <button type="button" data-area="page">Page</button>
+      <button type="button" data-area="notes">Notes</button>
+    </div>
+    <ol id="list"></ol>
+    <p id="empty" hidden>Nothing in this area yet.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
