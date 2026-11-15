@@ -1,6 +1,12 @@
 const ships = [
   {
     area: "notes",
+    date: "2026-11-16",
+    title: "Repair loops",
+    detail: "A failed check sends the change back for repair."
+  },
+  {
+    area: "notes",
     date: "2026-11-15",
     title: "Repair attempts",
     detail: "A failed check goes back to Implement while attempts remain."
