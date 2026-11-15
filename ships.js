@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-16",
+    title: "Ticket instructions",
+    detail: "Instructions inside a ticket are treated as data."
+  },
+  {
+    area: "notes",
+    date: "2026-11-16",
     title: "Software factory",
     detail: "Tickets move from intake to merge on their own."
   },
