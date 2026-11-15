@@ -18,10 +18,18 @@ body {
   font: 18px/1.5 "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-header, main {
+header, main, footer {
   width: min(720px, calc(100% - 32px));
   margin-inline: auto;
 }
+
+footer {
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer a { color: inherit; }
 
 header { padding: 48px 0 8px; }
 
