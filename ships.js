@@ -2,7 +2,7 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
-    title: "Stop evidenec",
+    title: "Stop evidence",
     detail: "A stopped change keeps its notes and merges nothing."
   },
   {
