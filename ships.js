@@ -1,5 +1,11 @@
 const ships = [
   {
+    area: "release",
+    date: "2026-11-15",
+    title: "Version 1.0",
+    detail: "The first tagged release of the Ship window page."
+  },
+  {
     area: "notes",
     date: "2026-11-15",
     title: "Repair loop",
