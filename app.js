@@ -20,7 +20,7 @@ function render(area) {
     const item = document.createElement("li");
     item.innerHTML = `<time datetime="${ship.date}">${ship.date}</time><h2></h2><p></p>`;
     item.querySelector("h2").textContent = ship.title;
-    item.querySelector("p").textContent = ship.detail;
+    item.querySelector("p").innerHTML = ship.detail;
     return item;
   }));
   empty.hidden = shown.length > 0;
