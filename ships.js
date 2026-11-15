@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Controller routing",
+    detail: "Code decides where a card goes next."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Stop evidence",
     detail: "A stopped change keeps its notes and merges nothing."
   },
