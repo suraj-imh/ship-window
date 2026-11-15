@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Counted attempts",
+    detail: "The controller counts every implementation attempt."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Repair attempts",
     detail: "A failed check goes back to Implement while attempts remain."
   },
