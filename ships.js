@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Human gate",
+    detail: "Larger changes wait for a person to approve them."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Short titles",
     detail: "Titles stay under five words so the list scans quickly."
   },
