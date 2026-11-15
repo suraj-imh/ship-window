@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Stop evidence",
+    detail: "A stopped change keeps its notes and merges nothing."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Back to top",
     detail: "A link after the list jumps back to the header."
   },
