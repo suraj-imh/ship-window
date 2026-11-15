@@ -1,6 +1,12 @@
 const ships = [
   {
     area: "notes",
+    date: "2026-11-16",
+    title: "Software factory",
+    detail: "Tickets move from intake to merge on their own."
+  },
+  {
+    area: "notes",
     date: "2026-11-15",
     title: "Repair attempts",
     detail: "A failed check goes back to Implement while attempts remain."
