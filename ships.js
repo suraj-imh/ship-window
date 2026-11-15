@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Guard probe",
+    detail: "The controller refuses moves it owns."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Repair attempts",
     detail: "A failed check goes back to Implement while attempts remain."
   },
