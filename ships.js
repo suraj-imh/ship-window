@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-15",
+    title: "Back to top",
+    detail: "A link after the list jumps back to the header."
+  },
+  {
+    area: "notes",
+    date: "2026-11-15",
     title: "Short titles",
     detail: "Titles stay under five words so the list scans quickly."
   },
