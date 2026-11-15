@@ -11,8 +11,12 @@ const html = read("index.html");
 const areas = [...html.matchAll(/data-area="([^"]+)"/g)].map((match) => match[1]).filter((area) => area !== "all");
 
 test("no injected fault is active", () => {
-  const flag = "/var/factory/faults/validate";
-  assert.ok(!fs.existsSync(flag), `fault injected by the factory test harness (${flag})`);
+  let branch = "";
+  try {
+    branch = require("node:child_process").execFileSync("git", ["branch", "--show-current"], { cwd: root, encoding: "utf8" }).trim();
+  } catch {}
+  const flags = ["/var/factory/faults/validate", `/var/factory/faults/validate-${branch.replace(/\//g, "_")}`];
+  for (const flag of flags) assert.ok(!fs.existsSync(flag), `fault injected by the factory test harness (${flag})`);
 });
 
 test("every entry has an area with a filter button", () => {
