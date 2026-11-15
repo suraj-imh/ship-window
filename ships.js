@@ -2,6 +2,12 @@ const ships = [
   {
     area: "notes",
     date: "2026-11-16",
+    title: "Human approval",
+    detail: "A person approves bigger changes before they merge."
+  },
+  {
+    area: "notes",
+    date: "2026-11-16",
     title: "Agent stages",
     detail: "AI agents plan, build and commit each change."
   },
