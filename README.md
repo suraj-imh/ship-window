@@ -2,4 +2,6 @@
 
 A one-page public changelog. Open `index.html` in a browser.
 
-The page is three files: `index.html`, `styles.css`, and `app.js`. Entries live in the `ships` list in `app.js`.
+Entries live in the `ships` list in `ships.js`, newest first. `app.js` renders them.
+
+Run the checks with `npm test`. They need Node 22 and nothing else.
